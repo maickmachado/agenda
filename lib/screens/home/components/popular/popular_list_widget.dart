@@ -21,7 +21,9 @@ class PopularItemList extends StatelessWidget {
           (index) => PopularItem(
             product: products[index],
             press: () => Navigator.pushNamed(
-                context, ProductDetailScreen.routeName,
+                //TODO: trocar o index pelo ID do produto products[index].id
+                context,
+                ProductDetailScreen.routeName,
                 arguments: ProductIndex(index: index)),
           ),
         ),
